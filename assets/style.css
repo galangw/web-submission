@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/poppins.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #ffffff;
+  color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  box-shadow: 0px -4px 9px 5px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 0px -4px 9px 5px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px -4px 9px 5px rgba(0, 0, 0, 0.31);
+  height: 70px;
+}
+
+.brand {
+  order: 1;
+  height: 70px;
+  margin-left: 15px;
+}
+
+.nav {
+  order: 2;
+  text-align: right;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.nav ul li {
+  margin: 10px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #422575;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .nav ul {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 9px 5px rgba(0, 0, 0, 0.31);
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+  }
+
+  .nav.active ul {
+    display: flex;
+  }
+
+  .nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-button {
+    display: none;
+  }
+}
+
+header .logo {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+article {
+  flex: 2;
+  margin: 0px;
+  padding: 0px;
+  /* border: 1px solid #fffcfc;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 3px 6px 10px -6px rgba(0, 0, 0, 0.4); */
+}
+.item {
+  padding: 5px 30px 35px 30px;
+  margin: 15px 0px 15px 0px;
+  border: 1px solid #fffcfc;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 3px 6px 10px -6px rgba(0, 0, 0, 0.4);
+}
+.item p {
+  text-align: justify;
+}
+.read-more {
+  background-color: #422575;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.loading {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #fffcfc;
+  border-radius: 10px;
+  box-shadow: 3px 6px 10px -6px rgba(0, 0, 0, 0.4);
+}
+aside {
+  flex: 1;
+
+  height: min-content;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about {
+  margin: 15px;
+  margin-left: 20px;
+  padding: 20px;
+  border: 1px solid #fffcfc;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 3px 6px 10px -6px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.social-icons {
+  padding: 30px;
+
+  text-align: center;
+}
+.social-icons a {
+  color: #422575;
+  line-height: 30px;
+  font-size: 30px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.social-icons a i {
+  line-height: 30px;
+  font-size: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+.social-icons a:hover i {
+  box-shadow: 0px 0px 150px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.5);
+}
+h1 {
+  font-size: 22px;
+}
+h2 {
+  font-size: 18px;
+}
+.myarticle {
+  text-align: left;
+  justify-content: start;
+  background-color: #422575;
+  color: #fff;
+}
+.myarticle p {
+  text-align: justify;
+}
+.myarticle a {
+  background-color: #fff;
+  color: #422575;
+  text-decoration: none;
+}
+.list-title {
+  padding: 20px;
+  margin: 15px 0px 15px 0px;
+  background-color: #422575;
+  color: #fff;
+
+  border-radius: 10px;
+  box-shadow: 3px 6px 10px -6px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+  background-color: #422575;
+  color: white;
+  padding: 10px;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+}
+@media (max-width: 769px) {
+  aside {
+  }
+  .about {
+    margin-left: 5px;
+  }
+}
